@@ -44,7 +44,6 @@ class App extends Component {
       toDoText: ""
     }
     console.log(this.state)
-    localStorage.setItem("toDoList", JSON.stringify(toDo))
   }
 
   toggleItem = id => {
@@ -104,6 +103,7 @@ class App extends Component {
   }
 
   render() {
+    localStorage.setItem("toDoList", JSON.stringify(this.state.toDoList))
     return (
       <div className="App">
         <h2>Todo List</h2>

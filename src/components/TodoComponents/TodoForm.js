@@ -6,7 +6,7 @@ const TodoForm = props => {
   return (
     <div>
       <form onSubmit={props.handleSubmit} noValidate autoComplete="off">
-        <input
+        <Input
           type="text"
           name="item"
           placeholder="Todo..."
@@ -14,9 +14,9 @@ const TodoForm = props => {
           onChange={props.handleChanges}
         />
         &nbsp;
-        <button variant="contained" color="primary">
+        <Button type="submit" variant="contained" color="primary">
           Add Todo
-        </button>
+        </Button>
       </form>
     </div>
   )
