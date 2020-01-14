@@ -1,0 +1,14 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item-completed {
+  text-decoration: line-through;
+  color: red;
+}
+
+.clear-btn {
+  border-radius: 10px !important;
+}
